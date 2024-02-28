@@ -20,7 +20,7 @@ jobs:
 
     - name: Package Helm Chart
       run: |
-        helm package ./projects3/Chart.yaml -d .
+        helm package ./projects3/.github/workflows
       working-directory: ./projects3
 
     - name: Configure S3 Plugin
