@@ -21,13 +21,13 @@ jobs:
     - name: Package Helm Chart
       run: |
         helm package 
-      working-directory: .
+      working-directory: projects3
 
     - name: Configure S3 Plugin
       run: |
         helm plugin install https://github.com/hypnoglow/helm-s3.git
       #  helm repo add s3-repo s3://your-s3-bucket/path/to/charts
-      working-directory: .
+     # working-directory: .
 
     #- name: Push Helm Chart to S3
     #  run: |
