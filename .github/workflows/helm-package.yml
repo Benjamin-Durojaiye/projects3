@@ -7,7 +7,7 @@ on:
 
 jobs:
   package_and_push:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - name: Checkout Repository
@@ -20,8 +20,7 @@ jobs:
 
     - name: Package Helm Chart
       run: |
-        helm package C:\Users\Durojayenb\Documents\projects3\.github\workflows
-
+        helm package 
       working-directory: ./projects3
 
     - name: Configure S3 Plugin
