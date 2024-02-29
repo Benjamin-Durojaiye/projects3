@@ -20,8 +20,9 @@ jobs:
 
     - name: Package Helm Chart
       run: |
-        helm package 
-      working-directory: . ..\chart
+        echo "${GITHUB_WORKSPACE}"
+      #   helm package 
+      # working-directory: . ..\chart
 
     - name: Configure S3 Plugin
       run: |
