@@ -20,8 +20,8 @@ jobs:
 
     - name: Package Helm Chart
       run: |
-        helm package ../chart
-      #  working-directory: projects3 test
+        helm package 
+       working-directory: ../chart
 
     - name: Configure S3 Plugin
       run: |
